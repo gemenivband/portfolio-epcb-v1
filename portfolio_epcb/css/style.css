@@ -309,6 +309,7 @@ textarea {
   color: black;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  border-radius: 10px;
 }
 
 .contact-info label {
