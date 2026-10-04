@@ -1,0 +1,55 @@
+/* Logo */
+
+.main-logo:hover {
+  color: gray;
+  transition: 0.3s ease;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition:
+    box-shadow 10s ease,
+    border-bottom 10s ease;
+}
+header.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle gray shadow */
+  border-bottom: 1px solid #ccc;
+}
+
+/* Navigation */
+.main-nav-link:hover {
+  color: gray;
+  transition: 0.3s ease;
+}
+
+/* button */
+.main-button:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s ease;
+}
+.contact-button:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s ease;
+}
+.work-img-info a:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Marquee */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
