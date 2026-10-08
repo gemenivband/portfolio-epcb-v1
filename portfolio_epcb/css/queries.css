@@ -1,0 +1,22 @@
+/* 1344px BELOW ---- START */
+@media (max-width: 84em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-name h1 {
+    font-size: 8.5em;
+  }
+  .hero-task {
+    font-size: 4em;
+  }
+  .hero-featured {
+    padding: 1.5rem 25rem 1.5rem 25rem;
+  }
+  .section-hero {
+    margin-bottom: -70px;
+  }
+  .about-details p {
+    text-align: justify;
+  }
+}
+/* 1344px BELOW ---- END */
