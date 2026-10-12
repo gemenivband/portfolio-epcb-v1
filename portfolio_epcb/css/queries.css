@@ -20,3 +20,75 @@
   }
 }
 /* 1344px BELOW ---- END */
+
+/* 1200px BELOW ---- START */
+@media (max-width: 75em) {
+  /* html {
+    font-size: 56.25%;
+  } */
+  .hero-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-info h1 {
+    font-size: 8.9rem;
+    text-align: center;
+  }
+  .hero-task {
+    text-align: center;
+  }
+  .hero-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .hero-signature {
+    width: 75%;
+  }
+  .section-work-contact {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-details {
+    grid-row: 2;
+    /* top - right - bottom - left */
+    margin: 2.5rem 20.9rem 1rem 20.9rem;
+  }
+  .works-view {
+    grid-row: 1;
+    /* top - right - bottom - left */
+    margin: 2.5rem 20.9rem 1rem 20.9rem;
+  }
+}
+
+/* 1200px BELOW ---- END */
+
+/* 944px BELOW ---- START */
+@media (max-width: 59em) {
+  .about-me {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .about-img {
+    width: 60%;
+  }
+}
+/* 944px BELOW ---- END */
+
+/* 704px BELOW ---- START */
+@media (max-width: 44em) {
+  .section-about {
+    /* margin: 1rem 0 1rem 12.9rem; */
+    margin: 1.5rem 1rem 1.5rem 18rem;
+  }
+  .about-logo-skills {
+    gap: 6px;
+  }
+}
+/* 704px BELOW ---- END */
