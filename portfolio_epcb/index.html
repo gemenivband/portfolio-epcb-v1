@@ -30,17 +30,35 @@
   <body>
     <header class="header scrolled">
       <a href="#" class="main-logo">EPCB</a>
-      <nav class="main-nav">
+      <nav
+        class="main-nav main-navigation"
+        id="primary-navigation"
+        aria-label="Main navigation"
+      >
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">HOME</a></li>
           <li><a class="main-nav-link" href="#about">ABOUT</a></li>
           <li><a class="main-nav-link" href="#works-contact">WORKS</a></li>
         </ul>
       </nav>
-      <a href="#works-contact" class="main-button">CONTACT ME</a>
-      <button class="btn-mobile-nav">
-        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
-        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      <a href="#works-contact" class="main-button contact-me">CONTACT ME</a>
+      <button
+        type="button"
+        class="btn-mobile-nav"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <ion-icon
+          name="menu-outline"
+          class="icon-mobile-nav menu-icon"
+          aria-hidden="true"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="icon-mobile-nav close-icon"
+          aria-hidden="true"
+        ></ion-icon>
       </button>
     </header>
 
@@ -187,10 +205,12 @@
                   />
                 </div>
                 <div class="contact-info">
-                  <label for="email-address">E-MAIL ADDRESS</label>
+                  <label for="email">E-MAIL ADDRESS</label>
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    autocomplete="email"
                     placeholder="Type your email"
                     required
                   />
@@ -198,14 +218,16 @@
               </div>
               <div class="contact-textarea">
                 <div class="contact-info">
-                  <label for="email-address">MESSAGE</label>
+                  <label for="message">MESSAGE</label>
                   <textarea
+                    id="message"
                     name="message"
                     rows="5"
+                    required
                     cols="40"
                     placeholder="Type your message here..."
                   ></textarea>
-                  <a href="#" class="contact-button"> SEND </a>
+                  <button type="submit" class="contact-button">SEND</button>
                 </div>
               </div>
             </form>
@@ -226,11 +248,17 @@
             </li>
             <li class="work-img-info">
               <ion-icon name="code-slash-outline" class="about-logo"></ion-icon>
-              <a href="#">SOFTWARE DEVELOPMENT</a>
+              <a
+                href="https://drive.google.com/drive/folders/13lLFNUqOZOWz_r_c1l-qpkVvZwIiKubL?usp=sharing"
+                >SOFTWARE DEVELOPMENT</a
+              >
             </li>
             <li class="work-img-info">
               <ion-icon name="logo-wordpress" class="about-logo"></ion-icon>
-              <a href="#">WEB DESIGNS</a>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1zQtUEQQlIdh-z25QX2Iu9GkYxhABtdqMAJYZD1ZRLIk/edit?usp=sharing"
+                >WEB DESIGNS</a
+              >
             </li>
           </ul>
         </div>

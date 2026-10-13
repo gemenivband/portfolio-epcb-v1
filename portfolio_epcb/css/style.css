@@ -137,8 +137,10 @@ body {
   font-size: 1.1rem;
   color: gray;
   display: inline-block;
+  white-space: nowrap;
   padding-left: 100%;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
 }
 
 .hero-cv {
@@ -418,3 +420,20 @@ textarea {
   color: gray;
 }
 /* MOBILE ---- END*/
+
+/* Responsive safety defaults */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+input,
+textarea,
+button {
+  font: inherit;
+}
+.contact-info input,
+.contact-info textarea {
+  max-width: 100%;
+}
