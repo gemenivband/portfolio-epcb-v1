@@ -78,6 +78,10 @@
   .about-img {
     width: 60%;
   }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
 }
 /* 944px BELOW ---- END */
 
@@ -87,8 +91,12 @@
     /* margin: 1rem 0 1rem 12.9rem; */
     margin: 1.5rem 1rem 1.5rem 18rem;
   }
-  .about-logo-skills {
-    gap: 6px;
+
+  .section-work-contact {
+    margin: 1.5rem 1rem 1.5rem 18rem;
+  }
+  .footer-details {
+    margin: 1.5rem 1rem 1.5rem 18rem;
   }
 }
 /* 704px BELOW ---- END */
